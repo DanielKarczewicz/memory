@@ -28,7 +28,7 @@ int main() {
 	std::cout << b->h(6) << '\n';
 	C *c = new C;
 	c = nullptr;
-	std::cout << c->(9, 5) << '\n';
+	std::cout << c->u(9, 5) << '\n';
 	return 0;
 
 }
