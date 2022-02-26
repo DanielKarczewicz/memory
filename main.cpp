@@ -26,7 +26,9 @@ int main() {
 	B *b = new B(1);
 	b = nullptr;
 	std::cout << b->h(6) << '\n';
-
+	C *c = new C;
+	c = nullptr;
+	std::cout << c->(9, 5) << '\n';
 	return 0;
 
 }
