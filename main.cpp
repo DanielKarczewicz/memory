@@ -7,6 +7,12 @@ struct A {
 
 };
 
+struct B {
+	B(int x) : x(x) {}
+	int x;
+	int h(int e) { return x+e; }
+};
+
 int main() {
 	A *a = new A;
 	a = nullptr;
