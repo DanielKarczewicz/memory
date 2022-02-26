@@ -19,6 +19,10 @@ int main() {
 	std::cout << a->m(3, 4) << '\n';
 	hello();
 	hello();
+	B *b = new B(1);
+	b = nullptr;
+	std::cout << b->h(6) << '\n';
+
 	return 0;
 
 }
