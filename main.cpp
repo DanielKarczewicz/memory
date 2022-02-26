@@ -13,6 +13,10 @@ struct B {
 	int h(int e) { return x+e; }
 };
 
+struct C {
+	virtual int u(int x, int y) { return x+y; }
+};
+
 int main() {
 	A *a = new A;
 	a = nullptr;
