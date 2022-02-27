@@ -27,10 +27,19 @@ int main() {
 	c = nullptr;
 	//std::cout << c->u(9, 5) << '\n';
 
+
 	int *u = new int(10);
 	delete u;
 	*u = 123;
-	std::cout << &u << '\n' << *u << '\n';
+	std::cout << &u << ':' << *u << '\n';
+	int *t = new int(10);
+	*t = 678;
+	std::cout << &u << ':' << *u << '\n';
+
+	int *tab = new int[100];
+	tab = new int [24];
+
+	delete[] tab;
 	return 0;
 
 }
